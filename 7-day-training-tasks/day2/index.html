@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrightBuild Co.</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">BrightBuild</div>
+  <button class="menu-btn" id="menuBtn">☰</button>
+  <nav>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1>We Build Websites That Work</h1>
+  <p>Simple, fast and reliable web solutions for small businesses.</p>
+  <a href="#contact" class="btn">Get a Quote</a>
+</section>
+
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <div class="service-grid">
+    <div class="service-card">
+      <h3>Web Design</h3>
+      <p>Custom website design for your business needs.</p>
+    </div>
+    <div class="service-card">
+      <h3>Web Development</h3>
+      <p>Fast and responsive websites built with clean code.</p>
+    </div>
+    <div class="service-card">
+      <h3>Maintenance</h3>
+      <p>Ongoing support to keep your website running smoothly.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <p>
+    BrightBuild Co. is a small web development team focused on
+    delivering simple, functional websites for local businesses.
+    We have been building websites for over 5 years.
+  </p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+  <p id="formStatus"></p>
+</section>
+
+<footer>
+  <p>&copy; 2026 BrightBuild Co.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

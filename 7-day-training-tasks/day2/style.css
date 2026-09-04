@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: #222;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1b3a4b;
+  color: #fff;
+  padding: 15px 30px;
+  position: relative;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: #eaf1f4;
+}
+
+.hero h1 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #1b3a4b;
+  color: #fff;
+  padding: 10px 22px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background: #12262f;
+}
+
+.services, .about, .contact {
+  padding: 50px 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services h2, .about h2, .contact h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.service-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card {
+  background: #f5f5f5;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+#formStatus {
+  margin-top: 10px;
+  color: green;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #1b3a4b;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .menu-btn {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #1b3a4b;
+    width: 200px;
+    padding: 10px;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
