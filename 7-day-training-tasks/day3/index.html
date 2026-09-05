@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login & Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="tabs">
+    <button class="tab-btn active" id="loginTabBtn">Login</button>
+    <button class="tab-btn" id="registerTabBtn">Register</button>
+  </div>
+
+  <form id="loginForm" class="form-box">
+    <h2>Login</h2>
+    <label for="loginEmail">Email</label>
+    <input type="text" id="loginEmail">
+    <span class="error" id="loginEmailError"></span>
+
+    <label for="loginPassword">Password</label>
+    <input type="password" id="loginPassword">
+    <span class="error" id="loginPasswordError"></span>
+
+    <button type="submit" class="btn">Login</button>
+    <p class="success" id="loginSuccess"></p>
+  </form>
+
+  <form id="registerForm" class="form-box hidden">
+    <h2>Register</h2>
+    <label for="regName">Full Name</label>
+    <input type="text" id="regName">
+    <span class="error" id="regNameError"></span>
+
+    <label for="regEmail">Email</label>
+    <input type="text" id="regEmail">
+    <span class="error" id="regEmailError"></span>
+
+    <label for="regPassword">Password</label>
+    <input type="password" id="regPassword">
+    <span class="error" id="regPasswordError"></span>
+
+    <label for="regConfirm">Confirm Password</label>
+    <input type="password" id="regConfirm">
+    <span class="error" id="regConfirmError"></span>
+
+    <button type="submit" class="btn">Register</button>
+    <p class="success" id="regSuccess"></p>
+  </form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
