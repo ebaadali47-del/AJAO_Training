@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+.container {
+  max-width: 420px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.app-header {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.note-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.note-form input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.btn {
+  padding: 8px 16px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+.note-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.delete-btn {
+  border: none;
+  background: none;
+  color: red;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #999;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 20px 10px;
+  }
+}
